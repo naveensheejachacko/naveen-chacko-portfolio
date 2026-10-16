@@ -4,410 +4,252 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Naveen Chacko · Backend Engineer</title>
-  <meta name="description" content="Naveen Chacko, backend engineer. Django, FastAPI, Celery, Redis, PostgreSQL and AWS. Payments, real-time systems and async pipelines for travel and maritime platforms.">
+  <meta name="description" content="Naveen Chacko, Python backend engineer (Django, FastAPI) at TravLounge. Scaled a Django API on AWS from 15 to 500+ req/s with Gunicorn threads, ECS autoscaling and Redis caching.">
+  <meta name="theme-color" content="#0a0b0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0b0d'/%3E%3Ctext x='14' y='45' font-family='Arial,sans-serif' font-weight='700' font-size='36' fill='%23ecedf0'%3EN%3C/text%3E%3Ccircle cx='49' cy='41' r='5' fill='%234ade80'/%3E%3C/svg%3E">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://naveensheejachacko.online/">
+  <meta property="og:title" content="Naveen Chacko · Backend Engineer">
+  <meta property="og:description" content="Scaled a Django API on AWS from 15 to 500+ req/s. Python, Django, ECS, Redis, Celery.">
+  <meta property="og:image" content="https://naveensheejachacko.online/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
 
-<header class="top wrap">
-  <a class="name" href="#">naveen-chacko</a>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="topbar">
+<div class="wrap nav">
+  <a class="brand" href="#">naveen<span>.chacko</span></a>
   <nav>
-    <a href="mailto:naveensheejachacko@gmail.com">email</a>
-    <a href="https://github.com/naveensheejachacko/" target="_blank" rel="noopener">github</a>
-    <a href="https://www.linkedin.com/in/naveen-chacko-06a519133/" target="_blank" rel="noopener">linkedin</a>
-    <a href="Naveen-Chacko-Resume.pdf" target="_blank" rel="noopener">résumé.pdf</a>
-    <button class="theme" type="button" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+    <a href="#results">Results</a>
+    <a href="#system">System</a>
+    <a href="#work">Work</a>
+    <a href="https://github.com/naveensheejachacko/" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/naveen-chacko-06a519133/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="Naveen-Chacko-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
   </nav>
+</div>
 </header>
 
-<div class="status wrap" aria-hidden="true">
-  <span><b>GET</b> /naveen-chacko</span>
-  <span class="ok">200 OK</span>
-  <span>backend engineer</span>
-  <span>UTC+5:30</span>
-  <span class="live"><i></i>currently at TravLounge</span>
-</div>
+<main id="main">
 
-<main>
+<!-- ───────── hero ───────── -->
+<section class="wrap hero">
+  <div class="hero-text">
+    <p class="eyebrow"><i></i>Backend engineer · Calicut, India</p>
+    <h1>Naveen Chacko</h1>
+    <p class="lead">I build and scale Python backends with Django and FastAPI on AWS. I run API performance and infrastructure at <a href="https://www.travlounge.com/" target="_blank" rel="noopener">TravLounge</a>, take on freelance builds like ibhoom, and switched to software from mechanical engineering in 2022.</p>
+  </div>
+  <picture class="photo">
+    <source srcset="naveen.webp" type="image/webp">
+    <img src="naveen.jpg" width="480" height="600" alt="Naveen Chacko, smiling, in front of tropical plants">
+  </picture>
 
-<section class="hero wrap">
-  <h1>I build the part of the app you never see. It charges you exactly once, sends you one reminder instead of three, and tells the vendor they've been paid.</h1>
-  <p class="lede">I'm Naveen, a backend engineer with almost three years in production. Mostly Python: Django, FastAPI, Celery, Redis and Postgres, deployed on AWS. I studied mechanical engineering, switched to software in 2022, and have been working on payments, queues and sockets since.</p>
-</section>
-
-<!-- ───────────── 01 trace ───────────── -->
-<section class="wrap block" id="trace">
-  <div class="label"><span>01</span> trace</div>
-  <h2>My career, as a trace.</h2>
-  <p class="sub">Each bar is a span on a real timeline. Click one to see its attributes and the child spans, which are the systems I built inside it.</p>
-
-  <div class="waterfall" style="--total:54">
-    <div class="axis" aria-hidden="true">
-      <span style="--at:0">2022</span>
-      <span style="--at:6">2023</span>
-      <span style="--at:18">2024</span>
-      <span style="--at:30">2025</span>
-      <span style="--at:42">2026</span>
-      <span class="now" style="--at:51.3">now</span>
-    </div>
-
-    <!-- KTU -->
-    <div class="span" data-kind="edu">
-      <button class="row" aria-expanded="false" aria-controls="d-ktu">
-        <span class="svc"><b>ktu</b> b.tech mechanical</span>
-        <span class="track"><span class="bar trunc" style="--s:0;--e:2"></span><span class="dur" style="--e:2">started earlier</span></span>
-      </button>
-      <div class="detail" id="d-ktu" hidden>
-        <dl class="attrs">
-          <dt>institution</dt><dd>APJ Abdul Kalam Technological University</dd>
-          <dt>degree</dt><dd>B.Tech, Mechanical Engineering</dd>
-          <dt>cgpa</dt><dd>7.57</dd>
-        </dl>
-        <p class="note">This span began before the trace window. Machine design and thermodynamics, then a decision to build things that don't need a lathe.</p>
-      </div>
-    </div>
-
-    <!-- Brototype -->
-    <div class="span" data-kind="edu">
-      <button class="row" aria-expanded="false" aria-controls="d-broto">
-        <span class="svc"><b>brototype</b> python full stack</span>
-        <span class="track"><span class="bar" style="--s:2;--e:15"></span><span class="dur" style="--e:15">12 mo</span></span>
-      </button>
-      <div class="detail" id="d-broto" hidden>
-        <dl class="attrs">
-          <dt>where</dt><dd>Brototype, Kochi</dd>
-          <dt>when</dt><dd>Sep 2022 → Sep 2023</dd>
-          <dt>focus</dt><dd>backend-heavy full stack</dd>
-          <dt>stack</dt><dd>Python · Django · React · REST · PostgreSQL · deployment basics</dd>
-        </dl>
-      </div>
-    </div>
-
-    <!-- Marlo -->
-    <div class="span" data-kind="work">
-      <button class="row" aria-expanded="false" aria-controls="d-marlo">
-        <span class="svc"><b>marlo</b> voyage management backend</span>
-        <span class="track"><span class="bar" style="--s:17;--e:38"></span><span class="dur" style="--e:38">1y 8m</span></span>
-      </button>
-      <div class="detail" id="d-marlo" hidden>
-        <dl class="attrs">
-          <dt>company</dt><dd><a href="https://www.marlo.co/" target="_blank" rel="noopener">Marlo Technologies</a></dd>
-          <dt>role</dt><dd>Python Developer, backend-focused</dd>
-          <dt>when</dt><dd>Dec 2023 → Aug 2025</dd>
-          <dt>domain</dt><dd>maritime: voyages, vessels, and the money around them</dd>
-          <dt>stack</dt><dd>Python · FastAPI · Django · PostgreSQL · Hasura · Airwallex</dd>
-        </dl>
-        <h4>child spans</h4>
-        <ul class="children">
-          <li><code>voyage.planning</code> Voyage planning, vessel tracking and voyage mapping services.</li>
-          <li><code>finance.contracts</code> Contract, transaction and estimate modules. Transactions run through Airwallex.</li>
-          <li><code>hasura.event_triggers</code> Database events fan out to downstream services, which replaced steps people used to do by hand.</li>
-          <li><code>credit.score</code> Credit score computation for vessel financing.</li>
-          <li><code>vessel.valuation</code> Valuation, voyage summaries and operational dashboards.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Ibhoom -->
-    <div class="span" data-kind="side">
-      <button class="row" aria-expanded="false" aria-controls="d-ibhoom">
-        <span class="svc"><b>ibhoom</b> multi-vendor marketplace</span>
-        <span class="track"><span class="bar" style="--s:37;--e:38"></span><span class="dur" style="--e:38">Aug 2025</span></span>
-      </button>
-      <div class="detail" id="d-ibhoom" hidden>
-        <dl class="attrs">
-          <dt>type</dt><dd>project</dd>
-          <dt>stack</dt><dd>FastAPI · React · PostgreSQL · JWT · FCM · Cloudinary</dd>
-        </dl>
-        <ul class="children">
-          <li><code>auth.rbac</code> Admin, Seller and Customer roles with role-level authorisation on every route.</li>
-          <li><code>catalog</code> Postgres schema for product variants and nested categories.</li>
-          <li><code>workflows</code> Product approvals, commission calculation, inventory.</li>
-          <li><code>notify</code> FCM push for each step of the order lifecycle.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- TravLounge -->
-    <div class="span" data-kind="work">
-      <button class="row" aria-expanded="false" aria-controls="d-tl">
-        <span class="svc"><b>travlounge</b> travel &amp; hospitality backend</span>
-        <span class="track"><span class="bar open" style="--s:37;--e:51.3"></span><span class="dur left" style="--s:37">1y 2m, running</span></span>
-      </button>
-      <div class="detail" id="d-tl" hidden>
-        <dl class="attrs">
-          <dt>company</dt><dd><a href="https://www.travlounge.com/" target="_blank" rel="noopener">TravLounge</a> (Beacon Infotech)</dd>
-          <dt>role</dt><dd>Backend Engineer</dd>
-          <dt>when</dt><dd>Aug 2025 → now</dd>
-          <dt>product</dt><dd>sleeping pods, car wash, food, used cars, subscriptions</dd>
-          <dt>surface</dt><dd>30+ REST APIs across booking, subscription, car wash, food and used cars</dd>
-          <dt>stack</dt><dd>Django · DRF · Channels · Celery · Redis · PostgreSQL · Elasticsearch · AWS ECS Fargate</dd>
-        </dl>
-        <h4>child spans</h4>
-        <ul class="children">
-          <li><code>payments.razorpay</code> Orders, HMAC-verified webhooks, idempotent confirmation, refunds and payout routing. Four payment types go through one handler registry. <a href="#webhook">Try it below ↓</a></li>
-          <li><code>perf.capacity</code> Took the API from a hidden ceiling of ~15 requests a second to 250. <a href="#incident">Read the write-up ↓</a></li>
-          <li><code>realtime.ws</code> Django Channels on Daphne with JWT-authenticated sockets, a Redis channel layer and per-user groups. It runs as its own ECS service next to Gunicorn.</li>
-          <li><code>tasks.celery</code> 13 task types: invoice PDF to S3, push, WhatsApp confirmations, delayed reminders guarded by Redis idempotency keys, and subscription expiry on celery-beat.</li>
-          <li><code>cache.redis</code> Home feed caching with per-resource TTLs and signal-driven invalidation. <a href="#cache">Try it below ↓</a></li>
-          <li><code>search.geo</code> Elasticsearch GeoPoint index and geo-distance sorting for nearby listings, rebuilt by a Celery task.</li>
-          <li><code>deploy.ecs</code> Docker images tagged by commit, pushed to ECR, a new task definition revision, then a zero-downtime service update.</li>
-          <li><code>notify.*</code> FCM, a custom WhatsApp connector, MSG91 email and Slack alerts for ops, all sent from queued tasks.</li>
-          <li><code>ai.trip_planner</code> OpenAI function calling with custom tool schemas, so it can find TravLounge stops along a route.</li>
-          <li><code>vendors</code> Dashboards, settlement tracking and booking reports, with settlement notices sent over WhatsApp.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- jobscarp -->
-    <div class="span" data-kind="side">
-      <button class="row" aria-expanded="false" aria-controls="d-jobs">
-        <span class="svc"><b>jobscarp</b> job-alert pipeline</span>
-        <span class="track"><span class="bar" style="--s:50;--e:51"></span><span class="dur left" style="--s:50">Sep 2026</span></span>
-      </button>
-      <div class="detail" id="d-jobs" hidden>
-        <dl class="attrs">
-          <dt>type</dt><dd>personal project, my own idea and code</dd>
-          <dt>stack</dt><dd>FastAPI · SQLAlchemy · Alembic · PostgreSQL · Gmail API · Sheets API · LLM</dd>
-          <dt>source</dt><dd><a href="https://github.com/naveensheejachacko/jobscarp" target="_blank" rel="noopener">github.com/naveensheejachacko/jobscarp</a></dd>
-        </dl>
-        <p class="note">More about this one in <a href="#after-hours">projects ↓</a></p>
-      </div>
-    </div>
-
-    <div class="legend" aria-hidden="true">
-      <span><i class="k-work"></i>work</span>
-      <span><i class="k-edu"></i>learning</span>
-      <span><i class="k-side"></i>projects</span>
-    </div>
+  <div class="kpis">
+    <div><b data-from="15" data-to="500" data-suffix="+">15 → 500+</b><span>requests per second the API handles</span></div>
+    <div><b data-from="3" data-to="12" data-suffix="">3 → 12</b><span>requests in flight per server</span></div>
+    <div><b data-from="1" data-to="8" data-suffix="">1 → 8</b><span>ECS tasks, autoscaling on CPU</span></div>
+    <div><b data-from="22" data-to="4" data-suffix="">22 → 4</b><span>queries on the busiest endpoint, 0 when cached</span></div>
   </div>
 </section>
 
-<!-- ───────────── 02 exactly once ───────────── -->
-<section class="wrap block" id="exactly-once">
-  <div class="label"><span>02</span> exactly once</div>
-  <h2>Two things that quietly go wrong in apps, and how I stop them.</h2>
-  <p class="sub">You don't need to be an engineer for these. Press the buttons and read what happens. They're small simulations of how I handle these problems at TravLounge. They run in your browser and the timings are made up, but the steps are the real ones. Engineers can switch on the raw server log.</p>
-
-  <!-- demo: webhook -->
-  <div class="demo" id="webhook">
-    <div class="demo-head">
-      <h3>Pay once, get booked once</h3>
-      <p>When you pay on TravLounge, the payment company (Razorpay) sends our server a short message saying the payment went through. Engineers call that message a <em>webhook</em>. If our server is slow to reply, Razorpay sends the same message again to be safe. A careless server treats the repeat as a new payment, and you end up with two bookings, two invoices and two WhatsApp messages.</p>
-    </div>
-    <div class="controls">
-      <label>paying for
-        <select id="wh-type">
-          <option value="sleeping_pod">a sleeping pod</option>
-          <option value="car_wash">a car wash</option>
-          <option value="food">food</option>
-          <option value="subscription">a subscription</option>
-        </select>
-      </label>
-      <button data-act="send">1 · Customer pays</button>
-      <button data-act="retry">2 · Razorpay sends it again</button>
-      <button data-act="forge" class="warn">3 · Someone fakes a payment</button>
-      <button data-act="reset" class="ghost">reset</button>
-      <label class="tech"><input type="checkbox" data-tech> show the server log</label>
-    </div>
-    <div class="console" id="wh-log" aria-live="polite"></div>
-    <div class="counters" id="wh-count">
-      <span>messages from Razorpay <b data-k="recv">0</b></span>
-      <span>bookings made <b data-k="book">0</b></span>
-      <span>WhatsApp messages sent <b data-k="wa">0</b></span>
-      <span>fakes rejected <b data-k="rej">0</b></span>
-    </div>
+<!-- ───────── before / after ───────── -->
+<section class="wrap" id="results">
+  <div class="sec-head">
+    <h2>Before and after</h2>
+    <p>What changed when I reworked how the API runs: Gunicorn threads, CPU autoscaling on ECS, and per-user Redis caching.</p>
   </div>
 
-  <!-- demo: cache -->
-  <div class="demo" id="cache">
-    <div class="demo-head">
-      <h3>Fast, but never out of date</h3>
-      <p>The app's home screen shows banners, categories and your subscription. Fetching them from the database on every open would be slow, so the server keeps a ready-made copy in fast memory, called a <em>cache</em>. The risk is showing an old copy after something has changed. So each piece gets its own rule for when its copy is thrown away.</p>
-    </div>
-    <div class="controls">
-      <button data-act="get">Open the home screen</button>
-      <button data-act="edit">Admin changes a banner</button>
-      <button data-act="t10m" class="ghost">wait 10 min</button>
-      <button data-act="t12h" class="ghost">wait 12 hours</button>
-      <label class="tech"><input type="checkbox" data-tech> show the server log</label>
-      <span class="clock">time passed <b id="c-clock">0m</b></span>
-    </div>
-    <div class="keys" id="c-keys">
-      <div class="key" data-key="banners"><span class="what">Banners <code>home:banners</code></span><span class="rule">kept until an admin changes one</span><span class="state">no copy yet</span></div>
-      <div class="key" data-key="categories"><span class="what">Categories <code>home:categories</code></span><span class="rule">thrown away every 12 hours</span><span class="state">no copy yet</span></div>
-      <div class="key" data-key="sub"><span class="what">Your subscription <code>sub:user:42</code></span><span class="rule">thrown away every 10 minutes</span><span class="state">no copy yet</span></div>
-    </div>
-    <div class="console short" id="c-log" aria-live="polite"></div>
+  <div class="ba" role="table" aria-label="API before and after my changes">
+    <div class="ba-row ba-head" role="row"><span role="columnheader"></span><span role="columnheader">Before</span><span role="columnheader">After</span></div>
+    <div class="ba-row" role="row"><span class="k" role="rowheader">Throughput</span><span class="b" role="cell">~15 req/s<i class="bar" style="--w:3%"></i></span><span class="a" role="cell">500+ req/s<i class="bar" style="--w:100%"></i></span></div>
+    <div class="ba-row" role="row"><span class="k" role="rowheader">Requests per server</span><span class="b" role="cell">3 at a time</span><span class="a" role="cell">12 at a time</span></div>
+    <div class="ba-row" role="row"><span class="k" role="rowheader">Scaling</span><span class="b" role="cell">1 server, autoscaler never fired</span><span class="a" role="cell">1–8 servers, scales on CPU</span></div>
+    <div class="ba-row" role="row"><span class="k" role="rowheader">Busiest endpoint</span><span class="b" role="cell">10–22 queries</span><span class="a" role="cell">4 queries, 0 when cached</span></div>
   </div>
 
-  <details class="code">
-    <summary>For engineers: how four payment types share one code path</summary>
-<pre><code><span class="c"># one handler per payment type; the dispatcher doesn't know any of them</span>
-PAYMENT_HANDLERS = {
-    <span class="s">"sleeping_pod"</span>: SleepingPodPaymentHandler,
-    <span class="s">"car_wash"</span>:     CarWashPaymentHandler,
-    <span class="s">"food"</span>:         FoodPaymentHandler,
-    <span class="s">"subscription"</span>: SubscriptionPaymentHandler,
-}
-
-<span class="k">class</span> PaymentInitiationService:
-    <span class="k">def</span> initiate(self, payment_type, **payload):
-        handler = PAYMENT_HANDLERS[payment_type]()
-        <span class="k">return</span> handler.initiate(**payload)
-
-<span class="c"># adding a fifth payment type = one class + one line above</span></code></pre>
-  </details>
+  <p class="why"><b>The catch:</b> servers were full but CPU showed 37%, so the autoscaler (set at 70%) never kicked in.</p>
 </section>
 
-<!-- ───────────── 03 incident ───────────── -->
-<section class="wrap block" id="incident">
-  <div class="label"><span>03</span> incident</div>
-  <h2>The server that was full but looked idle, and how it got to 250 req/s.</h2>
-  <p class="sub">A real problem from TravLounge production, written up the way I'd write it for my team. October 2026.</p>
+<!-- ───────── system diagram ───────── -->
+<section class="wrap" id="system">
+  <div class="sec-head">
+    <h2>The system I run</h2>
+    <p>TravLounge's backend on AWS and a VPS, simplified.</p>
+  </div>
 
-  <div class="pm">
-    <dl class="pm-meta">
-      <dt>found by</dt><dd>a load test I ran against production</dd>
-      <dt>symptom</dt><dd>each server copy topped out at ~15 requests a second</dd>
-      <dt>status</dt><dd><span class="pill ok">fixed</span></dd>
-      <dt>result</dt><dd>up to 250 requests a second</dd>
-    </dl>
+  <div class="arch">
+    <svg viewBox="0 0 980 500" role="img" aria-labelledby="arch-title arch-desc">
+      <title id="arch-title">TravLounge backend architecture</title>
+      <desc id="arch-desc">Mobile and web clients reach an AWS Application Load Balancer, which routes to the Django API on Gunicorn, running on ECS Fargate and autoscaling on CPU. A VPS outside AWS runs Celery workers and beat, Redis (cache, Celery queue and channel layer) and Elasticsearch. The API and Celery use PostgreSQL on RDS, S3, and third-party services: Razorpay, WhatsApp, FCM and MSG91. OpenObserve and Prometheus monitor the system, and GitHub Actions deploys images through ECR to ECS.</desc>
+      <defs>
+        <marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="ah"/></marker>
+      </defs>
 
-    <div class="pm-body">
-      <h3>What we saw</h3>
-      <p>Under load, each copy of the API server handled about 15 requests a second, no matter what we threw at it. Normally that's when AWS adds more servers. It didn't, because AWS was told to scale when CPU went above 70%, and CPU was sitting at <b>37%</b>. The server was full, but it looked idle, so nothing came to help.</p>
+      <!-- wires -->
+      <g class="wire">
+        <path d="M140 228 H178" marker-end="url(#ar)"/>
+        <path d="M300 228 H325 V119 H360" marker-end="url(#ar)"/>
+        <path d="M475 190 V288" marker-end="url(#ar)"/>
+        <path d="M588 119 H640"/>
+        <path d="M588 349 H640"/>
+        <path d="M640 112 V362"/>
+        <path d="M640 112 H678" marker-end="url(#ar)"/>
+        <path d="M640 207 H678" marker-end="url(#ar)"/>
+        <path d="M640 362 H678" marker-end="url(#ar)"/>
+        <path d="M416 376 V388" marker-end="url(#ar)"/>
+        <path d="M534 376 V388" marker-end="url(#ar)"/>
+      </g>
+      <g class="wire dash">
+        <path d="M300 92 H338" marker-end="url(#ar)"/>
+        <path d="M300 415 H320 V170 H338" marker-end="url(#ar)"/>
+      </g>
+      <g class="flow" aria-hidden="true">
+        <path d="M140 228 H178"/>
+        <path d="M300 228 H325 V119 H360"/>
+        <path d="M588 119 H640 V112 H678"/>
+      </g>
+      <text class="wl" x="485" y="244">cache · queue · search</text>
 
-      <div class="viz" aria-hidden="true">
-        <div class="meter">
-          <span class="meter-label">CPU while maxed out</span>
-          <div class="meter-track"><div class="meter-fill" style="width:37%"></div><div class="meter-line" style="left:70%"><span>scale-up at 70%</span></div></div>
-          <span class="meter-val">37%</span>
-        </div>
-      </div>
+      <!-- groups -->
+      <rect class="group" x="340" y="40" width="270" height="150" rx="14"/>
+      <text class="glabel" x="356" y="62">ECS FARGATE</text>
+      <rect class="group srv" x="340" y="290" width="270" height="170" rx="14"/>
+      <text class="glabel srv" x="356" y="312">VPS · OUTSIDE AWS</text>
 
-      <h3>Why</h3>
-      <p>Each server copy ran 3 workers, and each worker served one request at a time. A request took about 200 ms, and most of that was spent waiting on the database, Elasticsearch or Redis rather than using the CPU. That makes 3 workers × 5 requests a second = <b>15 a second</b>, with the CPU mostly waiting.</p>
+      <!-- nodes -->
+      <g class="node" data-n="client"><rect x="20" y="200" width="120" height="56" rx="10"/><text class="t" x="80" y="225">Mobile app</text><text class="s" x="80" y="243">and web</text></g>
+      <g class="node" data-n="alb"><rect x="180" y="200" width="120" height="56" rx="10"/><text class="t" x="240" y="225">Load balancer</text><text class="s" x="240" y="243">ALB</text></g>
 
-      <h3>The fix</h3>
-      <p>I let each worker take 4 requests at once using threads. While one request waits on the database, another runs. Python's GIL doesn't get in the way here, because it's released while waiting on the network. That gives 12 requests in flight per server copy instead of 3.</p>
+      <g class="node hot" data-n="api"><rect x="362" y="76" width="226" height="86" rx="10"/><text class="t" x="475" y="105">API · Django + Gunicorn</text><text class="s" x="475" y="126">1–8 tasks, CPU autoscaling</text><text class="s" x="475" y="144">3 workers × 4 threads</text></g>
 
-      <div class="viz slots" aria-hidden="true">
-        <div><span class="slots-label">before</span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slots-n">3 at a time</span></div>
-        <div><span class="slots-label">after</span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slots-n">12 at a time</span></div>
-      </div>
+      <g class="node" data-n="celery"><rect x="362" y="322" width="226" height="54" rx="10"/><text class="t" x="475" y="345">Celery workers + beat</text><text class="s" x="475" y="364">13 background job types</text></g>
+      <g class="node data" data-n="redis"><rect x="362" y="390" width="108" height="56" rx="10"/><text class="t" x="416" y="414">Redis</text><text class="s" x="416" y="432">cache · queue</text></g>
+      <g class="node data" data-n="elastic"><rect x="480" y="390" width="108" height="56" rx="10"/><text class="t" x="534" y="414">Elastic</text><text class="s" x="534" y="432">search</text></g>
 
-      <h3>The details that would have bitten later</h3>
-      <ul class="pm-list">
-        <li><b>Dropped connections.</b> Threaded workers keep connections open, so keep-alive is set to 75 s, longer than the load balancer's 60 s. If it were shorter, the server could close a connection the load balancer is about to reuse, and users would see random 502 errors.</li>
-        <li><b>Database connections.</b> Every request in flight holds its own database connection, so one server copy can now use up to 12. I raised the database connection limit to 60 to match.</li>
-        <li><b>A quick undo.</b> Changing how a live server runs is risky. If threads had caused problems, such as code that isn't safe to run in parallel or the database running out of connections, I didn't want to be writing a fix under pressure. So the thread count is a setting, and setting it back to 1 restores the old behaviour with a restart: no code change, no new build.</li>
-      </ul>
+      <g class="node data" data-n="db"><rect x="680" y="80" width="180" height="64" rx="10"/><text class="t" x="770" y="108">PostgreSQL</text><text class="s" x="770" y="127">Amazon RDS</text></g>
+      <g class="node data" data-n="s3"><rect x="680" y="180" width="180" height="54" rx="10"/><text class="t" x="770" y="204">S3</text><text class="s" x="770" y="221">invoices and media</text></g>
+      <g class="node ext" data-n="ext"><rect x="680" y="330" width="180" height="64" rx="10"/><text class="t" x="770" y="357">Razorpay · WhatsApp</text><text class="s" x="770" y="376">FCM · MSG91</text></g>
 
-      <h3>Same day: the slowest endpoint</h3>
-      <p>The load test also showed the "active subscriptions" endpoint was slow. Three causes, three fixes:</p>
-      <ul class="pm-list">
-        <li>It queued a cleanup job on <em>every</em> request. Now it runs at most once every 10 minutes.</li>
-        <li>It ran a separate database query for each item in the list (an N+1 query). Now it loads them in one batch.</li>
-        <li>It's now cached per user in Redis. The cache is cleared the moment a subscription is bought, used or cancelled, and if Redis is down the endpoint falls back to the database.</li>
-      </ul>
+      <g class="node side" data-n="obs"><rect x="20" y="60" width="280" height="64" rx="10"/><text class="t" x="160" y="88">OpenObserve + Prometheus</text><text class="s" x="160" y="107">dashboards · 9 Slack alerts</text></g>
+      <g class="node side" data-n="ci"><rect x="20" y="380" width="280" height="70" rx="10"/><text class="t" x="160" y="410">GitHub Actions → ECR</text><text class="s" x="160" y="430">approval-gated deploys</text></g>
+    </svg>
+  </div>
+  <p class="arch-info" aria-live="polite"><span class="dim">Tap or hover a component to see what it does.</span></p>
+</section>
 
-      <h3>Then: the database itself</h3>
-      <p>Threads let the server wait on the database more efficiently, but every request still waited. So I went after the wait itself:</p>
-      <ul class="pm-list next">
-        <li><span class="pill ok">done</span> Moved the database to an Asian region, next to the app servers, so each query spends less time travelling over the network.</li>
-        <li><span class="pill ok">done</span> Moved to a larger database instance that can serve the higher connection count.</li>
-        <li><span class="pill ok">done</span> Worked through the slowest queries one by one.</li>
-      </ul>
+<!-- ───────── work ───────── -->
+<section class="wrap" id="work">
+  <div class="sec-head">
+    <h2>What I've built</h2>
+    <p>At TravLounge since August 2025.</p>
+  </div>
 
-      <h3>Result</h3>
-      <div class="viz result" aria-hidden="true">
-        <div><span class="r-label">before</span><span class="r-bar" style="width:6%"></span><span class="r-n">~15 req/s</span></div>
-        <div><span class="r-label">after</span><span class="r-bar after" style="width:100%"></span><span class="r-n">250 req/s</span></div>
-      </div>
-      <p>The API now handles up to <b>250 requests a second</b>, up from a ceiling of about 15. Autoscaling can see the load again, because a busy server now actually uses its CPU.</p>
-    </div>
+  <div class="grid">
+    <article class="card">
+      <p class="tag">k6 · capacity planning</p>
+      <h3>Load testing in production</h3>
+      <p>I wrote the k6 runbook: real-usage request mix, automatic stop at p95 &gt; 5 s. One run sent 182,000 requests with zero server errors.</p>
+    </article>
+
+    <article class="card">
+      <p class="tag">OpenObserve · Prometheus · Slack</p>
+      <h3>Monitoring and 9 alerts</h3>
+      <p>Logs, metrics and traces in one place, with Slack alerts for 5xx errors, Redis, Celery backlog and the database.</p>
+    </article>
+
+    <article class="card">
+      <p class="tag">GitHub Actions · ECR · ECS</p>
+      <h3>Gated deploys</h3>
+      <p>Images build to ECR and roll out to ECS. Production needs a reviewer's approval, and CI checks every release branch.</p>
+    </article>
+
+    <article class="card">
+      <p class="tag">Razorpay · Celery · Django Channels</p>
+      <h3>Payments, jobs and WebSockets</h3>
+      <p>Razorpay for four products behind one handler registry, with webhooks safe to receive twice, and 13 Celery job types that never send duplicates. I also built JWT-authenticated WebSocket notifications on Django Channels and Daphne, run as their own ECS service.</p>
+    </article>
   </div>
 </section>
 
-<!-- ───────────── 04 projects ───────────── -->
-<section class="wrap block" id="after-hours">
-  <div class="label"><span>04</span> projects</div>
-  <h2>Things I've built outside the day job.</h2>
-  <p class="sub">Each one has a decision in it I'd happily argue about.</p>
-
-  <article class="proj">
-    <header>
-      <h3>jobscarp</h3>
-      <span class="meta">Sep 2026 · personal project · Python · FastAPI · Postgres · Gmail API · LLM</span>
-    </header>
-    <p>It reads job-alert emails from Cutshort and Instahyre through the official Gmail API, then parses, normalises and deduplicates them. Each job gets a score against my own profile and goes into a review queue that syncs to Google Sheets. It never scrapes, never logs in anywhere, and never applies on its own.</p>
-    <blockquote><b>The decision:</b> the LLM isn't allowed to score. The match score comes from a fixed weighted formula over parsed fields (skills 30%, experience 15%, salary 15%, and so on). The model only writes the narrative on top: fit, red flags, a draft message. Scoring stays testable and explainable, and it can't make up experience I don't have. 80+ tests.</blockquote>
-    <a class="src" href="https://github.com/naveensheejachacko/jobscarp" target="_blank" rel="noopener">source →</a>
-  </article>
-
-  <article class="proj">
-    <header>
-      <h3>ibhoom</h3>
-      <span class="meta">Aug 2025 · FastAPI · React · Postgres</span>
-    </header>
-    <p>A multi-vendor marketplace with three roles (admin, seller, customer), product approvals, commission calculation and inventory. Orders send push notifications at each step, and media goes through Cloudinary.</p>
-    <blockquote><b>The hard part:</b> the catalogue schema. Products with variants inside nested categories have to stay queryable as sellers add things nobody planned for.</blockquote>
+<!-- ───────── marlo ───────── -->
+<section class="wrap" id="marlo">
+  <div class="sec-head">
+    <h2>Before that, at Marlo</h2>
+    <p>Python Developer, December 2023 to August 2025.</p>
+  </div>
+  <article class="card marlo">
+    <p class="tag">FastAPI · PostgreSQL · Hasura · Airwallex</p>
+    <h3>Backend for a maritime voyage management platform</h3>
+    <p><a href="https://www.marlo.co/" target="_blank" rel="noopener">Marlo</a> serves shipping companies and was growing from a finance-first product into a full Voyage Management System covering planning, execution, payments and accounting.</p>
+    <ul class="ticks">
+      <li>Built voyage planning, vessel tracking, voyage maps and credit-score calculation in FastAPI and PostgreSQL.</li>
+      <li>Built the contract, estimate and transaction modules, with payments through Airwallex.</li>
+      <li>Automated manual operations steps with Hasura event triggers.</li>
+    </ul>
   </article>
 </section>
 
-<!-- ───────────── 05 stack ───────────── -->
-<section class="wrap block" id="stack">
-  <div class="label"><span>05</span> stack</div>
-  <h2>What I reach for.</h2>
-  <p class="sub">Split by where I've actually used it. No percentage bars.</p>
+<!-- ───────── path ───────── -->
+<section class="wrap" id="path">
+  <div class="sec-head"><h2>Path</h2></div>
+  <ol class="path">
+    <li><time>2025 – now</time><div><b>Backend Engineer, <a href="https://www.travlounge.com/" target="_blank" rel="noopener">TravLounge</a></b><span>Performance, infrastructure, payments and background jobs.</span></div></li>
+    <li><time>2023 – 2025</time><div><b>Python Developer, <a href="https://www.marlo.co/" target="_blank" rel="noopener">Marlo Technologies</a></b><span>Voyage and finance backend in FastAPI.</span></div></li>
+    <li><time>2022 – 2023</time><div><b>Brototype, Kochi</b><span>Python full-stack training, where I switched careers.</span></div></li>
+    <li><time>2022</time><div><b>B.Tech, Mechanical Engineering</b><span>APJ Abdul Kalam Technological University.</span></div></li>
+  </ol>
+</section>
 
-  <div class="stack">
-    <div>
-      <h4>in production, at work</h4>
-      <ul>
-        <li>Python</li><li>Django</li><li>Django REST Framework</li><li>FastAPI</li>
-        <li>Django Channels</li><li>Daphne (ASGI)</li><li>Celery + Celery Beat</li><li>Redis</li>
-        <li>PostgreSQL</li><li>Elasticsearch</li><li>Hasura</li>
-        <li>Razorpay</li><li>Airwallex</li>
-        <li>AWS ECS Fargate</li><li>ECR</li><li>EC2</li><li>S3</li><li>IAM</li><li>Docker</li>
-        <li>Firebase (FCM, Firestore)</li><li>WhatsApp Business API</li><li>MSG91</li><li>Slack SDK</li>
-        <li>OpenAI function calling</li><li>Prometheus</li><li>OpenObserve</li><li>ELK stack</li><li>drf-spectacular / OpenAPI</li>
-      </ul>
-    </div>
-    <div>
-      <h4>in my own projects</h4>
-      <ul>
-        <li>SQLAlchemy + Alembic</li><li>pytest</li><li>React</li>
-        <li>Gmail &amp; Sheets APIs</li><li>Gemini &amp; Anthropic APIs</li><li>Cloudinary</li>
-        <li>MongoDB</li><li>Hostinger VPS</li>
-      </ul>
-    </div>
+<section class="wrap side">
+  <div class="sec-head"><h2>Code, freelance and side projects</h2></div>
+  <div class="grid">
+    <a class="card proj wide-proj" href="https://github.com/naveensheejachacko/django-reliable-payments" target="_blank" rel="noopener">
+      <p class="tag">Open source · Django · Celery · PostgreSQL · Redis</p>
+      <h3>django-reliable-payments <span>↗</span></h3>
+      <p>The payment patterns I use at work, rebuilt from scratch as a small public project: Razorpay webhooks that are safe to receive twice, a database rule that stops a slot being sold twice (the loser is refunded automatically), Celery jobs that never message anyone twice, and a cache that survives Redis going down. 20 tests, run on SQLite and PostgreSQL in CI.</p>
+    </a>
+    <a class="card proj" href="https://github.com/naveensheejachacko/ibhoom" target="_blank" rel="noopener">
+      <p class="tag">Freelance · FastAPI · React · PostgreSQL</p>
+      <h3>ibhoom <span>↗</span></h3>
+      <p>A marketplace connecting local Kerala vendors with nearby customers, with admin, seller and customer roles. Products with variants, location-based search, per-category commissions, seller and product approvals, and push notifications. I built it end to end and run it on a VPS behind Nginx and Cloudflare.</p>
+    </a>
+    <a class="card proj" href="https://github.com/naveensheejachacko/jobscarp" target="_blank" rel="noopener">
+      <p class="tag">Personal · FastAPI · PostgreSQL · Gmail API · LLM</p>
+      <h3>jobscarp <span>↗</span></h3>
+      <p>Scores job-alert emails against my profile and queues the good ones for review. The LLM explains the score but isn't allowed to decide it: that's a plain formula I can test. 80+ tests.</p>
+    </a>
   </div>
 </section>
 
-<!-- ───────────── contact ───────────── -->
-<section class="wrap block contact" id="contact">
-  <div class="label"><span>06</span> response</div>
-  <h2>If you've got a system that needs to be correct before it's clever, I'd like to hear about it.</h2>
-  <a class="mail" href="mailto:naveensheejachacko@gmail.com">naveensheejachacko@gmail.com</a>
-  <p class="links">
-    <a href="https://github.com/naveensheejachacko/" target="_blank" rel="noopener">github</a> ·
-    <a href="https://www.linkedin.com/in/naveen-chacko-06a519133/" target="_blank" rel="noopener">linkedin</a> ·
-    <a href="Naveen-Chacko-Resume.pdf" target="_blank" rel="noopener">résumé.pdf</a>
-  </p>
+<section class="wrap stack">
+  <p><span>Daily tools</span>Python · Django / DRF · FastAPI · Celery · Redis · PostgreSQL · Elasticsearch · AWS ECS Fargate, ECR, RDS, S3, IAM, Secrets Manager · Docker · GitHub Actions · OpenObserve · Prometheus · k6 · pytest</p>
+</section>
+
+<section class="wrap cta">
+  <h2>Looking for my next backend role.</h2>
+  <p>Backend and platform engineering with Python and AWS. I'm based in Calicut, Kerala, and open to roles in Bangalore, Chennai, Trivandrum or Kochi. Email is the fastest way to reach me.</p>
+  <div class="mail-row">
+    <a class="mail" href="mailto:naveensheejachacko@gmail.com">naveensheejachacko@gmail.com</a>
+    <button class="copy" type="button" data-copy="naveensheejachacko@gmail.com" hidden>Copy</button>
+  </div>
 </section>
 
 </main>
 
 <footer class="wrap">
   <span>© 2026 Naveen Chacko</span>
-  <a href="#">back to top ↑</a>
+  <a href="#">Back to top ↑</a>
 </footer>
 
-<script src="main.js"></script>
 </body>
 </html>
